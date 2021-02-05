@@ -34,7 +34,7 @@ class TicTacToe
   end
 
   def turn_count
-    @board.count{|square| square != " " }
+    @board.count{|amount| amount != " " }
   end
 
   def current_player
@@ -63,7 +63,7 @@ class TicTacToe
   end
 
   def full?
-    @board.all?{|square| square != " " }
+    @board.all?{|amount| amount != " " }
   end
 
   def draw?
